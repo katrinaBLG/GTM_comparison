@@ -1,5 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
+"""
+ @desc  Compare two Goolge Tag Manager containers
+ 
+ @author Misha M.-Kupriyanov https://google.com/+MishaMKupriyanov
+ @link https://gist.github.com/printminion/9cae259c6c7220ea1540
+"""
+ 
 import pprint
 
 from gapps import auth
