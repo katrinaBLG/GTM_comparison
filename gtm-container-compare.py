@@ -55,8 +55,8 @@ gtm_service = build('tagmanager', 'v1', http=http)
 # get tags
 
 #SOURCE CONTAINER
-sourceAccountId = '<PUT_SOURCE_ACCOUNTID_HERE>'
-sourceContainerId = '<PUT_SOURCE_CONTAINERID_HERE>'
+sourceAccountId = '<GTM-5VT7KCV>'
+sourceContainerId = '<GTM-5VT7KCV_v31.json>'
 
 source_tags = gtm_service.accounts().containers().tags().list(accountId=sourceAccountId,
                                                               containerId=sourceContainerId).execute()
@@ -65,8 +65,8 @@ source_variables = gtm_service.accounts().containers().variables().list(accountI
 # pprint.pprint(source_tags)
 
 # TARGET CONTAINER
-targetAccountId = '<PUT_TARGET_ACCOUNTID_HERE>'
-targetContainerId = '<PUT_TARGET_CONTAINERID_HERE>'
+targetAccountId = '<GTM-TC9LQ64>'
+targetContainerId = '<GTM-TC9LQ64_v9.json>'
 
 target_tags = gtm_service.accounts().containers().tags().list(accountId=targetAccountId,
                                                               containerId=targetContainerId).execute()
